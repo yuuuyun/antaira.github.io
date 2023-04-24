@@ -1,0 +1,324 @@
+@mixin li-style {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: $roboto-b7;
+    padding: 10px 16px;
+}
+
+// ------按鈕樣式---------
+@mixin btn-style {
+    border: none;
+    color: $bg-wt;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 5px 0 5px 5px;
+}
+@mixin btn-style1 {
+    transition: all 0.5s;
+    &:hover span {
+        padding-right: 25px;
+        &::after {
+            opacity: 1;
+            right: 0;
+        }
+    }
+    span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        &::after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+    }
+}
+@mixin btn-style2 {
+    text-decoration: none;
+    transition-duration: 0.4s;
+    margin-top: 4px;
+    background-color: $bg-wt;
+    color: $bg-bl;
+    border: 1.5px solid $btn-gray;
+}
+
+// ------客戶公司標準色-------
+$bg-red: #d92128;
+$bg-bl: #231f1f;
+$bg-wt: #FFFFFF;
+$btn-green: #4CAF50;
+$btn-gray: #777674;
+$btn-gray2:#a1a1a1;
+$roboto-r4: 400;
+$roboto-m5: 500;
+$roboto-b7: 700;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    letter-spacing: -0.02em;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    background-color: #f5f5f7;
+    img{
+        max-width: 100%;
+    }
+    .logo{
+        width: 150px;
+        margin-top: 15px;
+    }
+    input[type='radio'],
+    input[type='checkbox']{
+    border: 3px solid $bg-wt;
+    accent-color:$bg-bl;
+}}
+
+// ---------側欄樣式-----------
+aside{
+    width: 20%;
+    margin-left: 2%;
+    a{
+        color: $bg-wt;
+    }
+    // ------側欄大標題---------
+    .sub-title{
+        font-weight: $roboto-m5;
+        font-size: 16px;
+        color: $bg-wt;
+        background: $btn-gray;
+        border-radius: 10px;
+        padding: 8px 20px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0 0 0;
+    }
+    // ------側欄內文---------
+    .asideAll{
+        margin: 25px 10px;
+        h3{ 
+            font: {
+            weight: $roboto-m5;
+            size: 14px;
+        }
+        line-height: 21px;
+        }
+        p{
+            font: {
+            weight: $roboto-r4;
+            size: 12px;
+        }
+        line-height: 18px;
+        width: 100%;
+        padding: 0 0 13px 0;
+        border-bottom: 0.5px solid #d2d2d7;
+        }
+    }
+}
+
+// -----------按鈕區-------------
+.btnBox{
+    position: relative;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: right;
+}
+
+// --------紅色save按鈕-----------
+.button {
+    background-color: $bg-red;
+    @include btn-style;
+    @include btn-style1;
+}
+
+// --------紅色save按鈕-----------
+.button-1 {
+    background-color:$btn-gray;
+    border: none;
+    color: $bg-wt;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 10px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 5px 0 5px 5px;
+    @include btn-style1;
+
+}
+
+// --------綠色apply按鈕-----------
+.button1 {
+    background-color: $btn-green;
+    @include btn-style;
+    @include btn-style1;
+}
+
+// --------灰色 Cancel 按鈕-----------
+.button2 {
+    background-color: $btn-gray;
+    @include btn-style;
+    @include btn-style1;
+}
+
+// ---------黑色Reboot按鈕-----------
+.button3 {
+    background-color: $bg-bl;
+    @include btn-style;
+    @include btn-style1;
+}
+
+// ---------灰色按鈕，hover轉黑-----------
+.PasteBtn{
+    @include btn-style;
+    @include btn-style2;
+    background-color: $btn-gray;
+    color: $bg-wt;
+    &:hover {
+        background-color: $bg-bl ;
+        color: $bg-wt;
+        border: 0;
+    }
+    height: 35px;
+}
+
+// ---------Copy按鈕-----------
+.Copybutton {
+    @include btn-style;
+    @include btn-style2;
+    &:hover {
+        background-color: $bg-bl;
+        color: $bg-wt;
+        border: 0;
+    }
+    height: 35px;
+}
+
+// ---------Remove按鈕-----------
+.RemoveBtn{
+    @include btn-style;
+    @include btn-style2;
+    background-color: $bg-red;
+    color: $bg-wt;
+    border: 0;
+    &:hover {
+        background-color: $bg-bl ;
+        color: $bg-wt;
+    }
+    height: 35px;
+}
+
+// ---------add按鈕(PPPoE Server頁面)-----------
+.addbtn{
+    background-color: $btn-gray;
+    border: 0;
+    border-radius: 5px;
+    color: $bg-wt;
+    width: 110px;
+    height: 35px;
+}
+
+// ------與下拉式選單同行的刪除按鈕------
+.dropDown_button{
+    justify-content: space-between;
+    display: flex;
+    select{
+        position: relative;
+        width: calc(100% - 85px) !important;
+    }
+}
+
+.deleteBtn{
+    background-color: $bg-red;
+    border: 0;
+    color: $bg-wt;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+}
+
+.content5Btn{
+    background-color: $bg-red;
+    border: 0;
+    color: $bg-wt;
+    border-radius: 5px;
+    width: 19.5%;
+    height: 30px;
+}
+
+// ------與輸入欄同行的generate按鈕------
+.generate-key{
+    background-color: $bg-red;
+    border: 0;
+    color: $bg-wt;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+}
+
+// ----灰色的show/Add button (像是Advanced Routing / Networking頁面)-----
+.smallBox{
+    margin-top: 5px;
+    text-align: right;
+    .smallbutton{
+        background-color: $btn-gray;
+        border: 0;
+        border-radius: 5px;
+        color: $bg-wt;
+        width: 150px;
+        height: 35px;
+    }
+}
+
+// ----灰色的survey button (像是Wireless-Basic Settings頁面)-----
+.smallBox2{
+    margin: 5px 0;
+    .surveybutton{
+        background-color: $btn-gray;
+        border: 0;
+        border-radius: 5px;
+        color: $bg-wt;
+        width: 220px;
+        height: 35px;
+    }
+}
+
+// ----淺灰色的Add Virtual AP button (像是Wireless-Basic Settings頁面)-----
+.addVirtualAp-btn{
+    background-color: $btn-gray2;
+    border: 0;
+    border-radius: 5px;
+    color: $bg-wt;
+    width: 150px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+// -------響應式部份---------
+@media (max-width:458px){
+    .button,.button1,.button2 {
+        width: 80px !important;
+    }
+}

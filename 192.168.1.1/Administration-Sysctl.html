@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <title>Sysctl</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <h1 class="wanTypeTitle">Sysctl Configuration</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">dev.tty</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">
+                            <p>ldisc_autoload</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">fs.epoll</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">
+                            <p>max_user_watches</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">fs.inotify</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">
+                            <p>max_user_watches</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	max_user_instances</p> 
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">	
+                            <p>max_user_watches</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">fs</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">
+                            <p>	file-max</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>lease-break-time</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	leases-enable</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	mount-max</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	nr_open	</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	overflowgid	</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	overflowuid	</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	pipe-max-size</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	pipe-user-pages-hard</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	pipe-user-pages-soft</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	protected_fifos	</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">	
+                            <p>	protected_hardlinks	</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">	
+                            <p>	protected_regular</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	protected_symlinks</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	suid_dumpable</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">ioctl</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">				
+                            <p>cryptodev_verbosity</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">kernel.keys</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">				
+                            <p>gc_delay</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">				
+                            <p>maxbytes</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">				
+                            <p>maxkeys</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">				
+                            <p>root_maxbytes</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">				
+                            <p>root_maxkeys</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">kernel.pty</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">				
+                            <p>max</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">				
+                            <p>reserve</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">kernel.random</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">				
+                            <p>read_wakeup_threshold</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">				
+                            <p>urandom_min_reseed_secs</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">				
+                            <p>write_wakeup_threshold</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">kernel.usermodehelper</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">				
+                            <p>bset</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">				
+                            <p>inheritable</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">kernel</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">		
+                            <p>	auto_msgmni	</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>cad_pid</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	core_pattern</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	core_pipe_limit	</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	core_uses_pid</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	ctrl-alt-del</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	dmesg_restrict</p>
+                            <input type="text" class="secInp"/>	
+                        </div>
+                        <div class="normalInp">
+                            <p>	domainname</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	hostname</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">	
+                            <p>	hotplug	</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>	hrtimeout_min_us</p>
+                            <input type="text" class="secInp"/>
+                    </div>
+                    <div class="normalInp">
+                        <p>	hrtimer_granularity_us</p>
+                        <input type="text" class="secInp"/>
+                    </div>
+                    <div class="normalInp">
+                        <p>	kptr_restrict</p>
+                        <input type="text" class="secInp"/>
+                    </div>
+                    <div class="normalInp"><p>	max_lock_depth	</p><input type="text" class="secInp"/></div>
+                    <div class="normalInp">	<p>	modprobe	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	modules_disabled</p><input type="text" class="secInp"/></div>
+                    <div class="normalInp">	<p>	msgmax	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	msgmnb	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	msgmni	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	overflowgid	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	overflowuid	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	panic	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	panic_on_oops	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	panic_on_rcu_stall	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	panic_on_warn	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	pid_max	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	poweroff_cmd	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	print-fatal-signals	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	printk	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	printk_delay	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	printk_devkmsg	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	printk_ratelimit	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	printk_ratelimit_burst	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	randomize_va_space	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	sched_child_runs_first	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	sched_rr_timeslice_ms	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	sched_rt_period_us	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	sched_rt_runtime_us	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	sem	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	shm_rmid_forced	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	shmall	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	shmmax	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	shmmni	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	sysctl_writes_strict	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	sysrq	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	tainted	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	threads-max	</p><input type="text" class="secInp"/>	</div>
+                    <div class="normalInp">	<p>	unprivileged_bpf_disabled	</p><input type="text" class="secInp"/>	</div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.bridge</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">	<p>	bridge-nf-filter-pppoe-tagged	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bridge-nf-filter-vlan-tagged	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bridge-nf-pass-vlan-input-dev	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.core</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">	<p>	busy_poll	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	busy_read	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	dev_weight	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	flow_limit_cpu_bitmap	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	flow_limit_table_len	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	max_skb_frags	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	message_burst	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	message_cost	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	netdev_budget	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	netdev_max_backlog	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	netdev_tstamp_prequeue	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	optmem_max	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rmem_default	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rmem_max	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rps_sock_flow_entries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	somaxconn	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tstamp_allow_data	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	warnings	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	wmem_default	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	wmem_max	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	xfrm_acq_expires	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	xfrm_aevent_etime	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	xfrm_aevent_rseqth	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	xfrm_larval_drop	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.edma</p>
+                    <div class="wanTypeP">  
+                        <div class="normalInp">	<p>	athr_hdr_eth_type	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	default_group1_vlan_tag	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	default_group2_vlan_tag	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	default_group3_vlan_tag	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	default_group4_vlan_tag	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	default_group5_vlan_tag	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	default_lan_tag	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	default_wan_tag	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	edma_rss_idt_idx	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	edma_rss_idt_value	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	enable_stp_rstp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	queue_to_virtual_queue_map	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	weight_assigned_to_queues	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.conf.all</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">	<p>	accept_local	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_source_route	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_announce	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_ignore	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_notify	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bootp_relay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_policy	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_xfrm	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_gratuitous_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_unicast_in_l2_multicast	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	force_igmp_version	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	forwarding	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv2_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv3_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ignore_routes_with_linkdown	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	log_martians	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	medium_id	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	promote_secondaries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp_pvlan	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	route_localnet	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	secure_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	send_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	shared_media	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	src_valid_mark	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tag	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.conf.br0</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	accept_local	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_source_route	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_announce	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_ignore	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_notify	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bootp_relay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_policy	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_xfrm	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_gratuitous_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_unicast_in_l2_multicast	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	force_igmp_version	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	forwarding	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv2_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv3_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ignore_routes_with_linkdown	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	log_martians	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	medium_id	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	promote_secondaries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp_pvlan	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	route_localnet	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	secure_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	send_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	shared_media	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	src_valid_mark	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tag	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.conf.br1</p>
+                    <div class="wanTypeP">  
+                        <div class="normalInp">	<p>	accept_local	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_source_route	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_announce	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_ignore	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_notify	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bootp_relay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_policy	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_xfrm	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_gratuitous_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_unicast_in_l2_multicast	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	force_igmp_version	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	forwarding	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv2_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv3_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ignore_routes_with_linkdown	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	log_martians	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	medium_id	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	promote_secondaries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp_pvlan	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	route_localnet	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	secure_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	send_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	shared_media	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	src_valid_mark	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tag	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.conf.default</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	accept_local	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_source_route	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_announce	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_ignore	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_notify	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bootp_relay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_policy	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_xfrm	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_gratuitous_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_unicast_in_l2_multicast	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	force_igmp_version	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	forwarding	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv2_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv3_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ignore_routes_with_linkdown	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	log_martians	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	medium_id	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	promote_secondaries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp_pvlan	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	route_localnet	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	secure_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	send_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	shared_media	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	src_valid_mark	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tag	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.conf.eth0</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	accept_local	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_source_route	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_announce	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_ignore	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_notify	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bootp_relay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_policy	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_xfrm	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_gratuitous_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_unicast_in_l2_multicast	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	force_igmp_version	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	forwarding	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv2_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv3_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ignore_routes_with_linkdown	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	log_martians	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	medium_id	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	promote_secondaries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp_pvlan	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	route_localnet	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	secure_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	send_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	shared_media	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	src_valid_mark	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tag	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.conf.eth1</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	accept_local	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_source_route	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_announce	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_ignore	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_notify	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bootp_relay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_policy	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_xfrm	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_gratuitous_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_unicast_in_l2_multicast	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	force_igmp_version	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	forwarding	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv2_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv3_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ignore_routes_with_linkdown	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	log_martians	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	medium_id	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	promote_secondaries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp_pvlan	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	route_localnet	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	secure_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	send_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	shared_media	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	src_valid_mark	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tag	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.conf.lo</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">	<p>	accept_local	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_source_route	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_announce	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_ignore	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_notify	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bootp_relay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_policy	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_xfrm	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_gratuitous_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_unicast_in_l2_multicast	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	force_igmp_version	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	forwarding	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv2_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv3_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ignore_routes_with_linkdown	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	log_martians	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	medium_id	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	promote_secondaries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp_pvlan	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	route_localnet	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	secure_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	send_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	shared_media	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	src_valid_mark	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tag	</p><input type="text" class="secInp"/></div>      
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.conf.teql0</p>
+                    <div class="wanTypeP">  
+                        <div class="normalInp">	<p>	accept_local	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_source_route	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_announce	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_ignore	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_notify	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bootp_relay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_policy	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_xfrm	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_gratuitous_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_unicast_in_l2_multicast	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	force_igmp_version	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	forwarding	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv2_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv3_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ignore_routes_with_linkdown	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	log_martians	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	medium_id	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	promote_secondaries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp_pvlan	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	route_localnet	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	secure_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	send_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	shared_media	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	src_valid_mark	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tag	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.conf.wlan1</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">	<p>	accept_local	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_source_route	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_announce	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_ignore	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_notify	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bootp_relay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_policy	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_xfrm	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_gratuitous_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_unicast_in_l2_multicast	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	force_igmp_version	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	forwarding	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv2_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv3_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ignore_routes_with_linkdown	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	log_martians	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	medium_id	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	promote_secondaries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp_pvlan	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	route_localnet	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	secure_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	send_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	shared_media	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	src_valid_mark	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tag	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.conf.wlan1.1</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	accept_local	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	accept_source_route	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_announce	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_ignore	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	arp_notify	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	bootp_relay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_policy	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	disable_xfrm	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_gratuitous_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	drop_unicast_in_l2_multicast	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	force_igmp_version	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	forwarding	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv2_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmpv3_unsolicited_report_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ignore_routes_with_linkdown	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	log_martians	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	medium_id	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	promote_secondaries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_arp_pvlan	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	route_localnet	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	rp_filter	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	secure_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	send_redirects	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	shared_media	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	src_valid_mark	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tag	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.neigh.br0</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	anycast_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	app_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	base_reachable_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	delay_first_probe_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_stale_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	locktime	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_resolicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	retrans_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ucast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen_bytes	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.neigh.br1</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	anycast_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	app_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	base_reachable_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	delay_first_probe_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_stale_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	locktime	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_resolicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	retrans_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ucast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen_bytes	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.neigh.default</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	anycast_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	app_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	base_reachable_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	delay_first_probe_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_stale_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_thresh1	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_thresh2	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_thresh3	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	locktime	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_resolicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	retrans_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ucast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen_bytes	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.neigh.eth0</p>
+                    <div class="wanTypeP">  
+                        <div class="normalInp">	<p>	anycast_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	app_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	base_reachable_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	delay_first_probe_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_stale_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	locktime	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_resolicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	retrans_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ucast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen_bytes	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.neigh.eth1</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	anycast_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	app_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	base_reachable_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	delay_first_probe_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_stale_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	locktime	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_resolicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	retrans_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ucast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen_bytes	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.neigh.lo</p>
+                    <div class="wanTypeP">  
+                        <div class="normalInp">	<p>	anycast_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	app_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	base_reachable_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	delay_first_probe_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_stale_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	locktime	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_resolicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	retrans_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ucast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen_bytes	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.neigh.teql0</p>
+                    <div class="wanTypeP">  
+                        <div class="normalInp">	<p>	anycast_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	app_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	base_reachable_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	delay_first_probe_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_stale_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	locktime	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_resolicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	retrans_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ucast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen_bytes	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.neigh.wlan1</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	anycast_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	app_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	base_reachable_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	delay_first_probe_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_stale_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	locktime	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_resolicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	retrans_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ucast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen_bytes	</p><input type="text" class="secInp"/></div>     
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.neigh.wlan1.1</p>
+                    <div class="wanTypeP">  
+                        <div class="normalInp">	<p>	anycast_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	app_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	base_reachable_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	delay_first_probe_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_stale_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	locktime	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_resolicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mcast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_delay	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	proxy_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	retrans_time_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ucast_solicit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	unres_qlen_bytes	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4.route</p>
+                    <div class="wanTypeP">  
+                        <div class="normalInp">	<p>	error_burst	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	error_cost	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_elasticity	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_min_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_min_interval_ms	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_thresh	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	gc_timeout	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	max_size	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	min_adv_mss	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	min_pmtu	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mtu_expires	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	redirect_load	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	redirect_number	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	redirect_silence	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.ipv4</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	fib_multipath_use_neigh	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	fwmark_reflect	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	icmp_echo_ignore_all	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	icmp_echo_ignore_broadcasts	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	icmp_errors_use_inbound_ifaddr	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	icmp_ignore_bogus_error_responses	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	icmp_msgs_burst	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	icmp_msgs_per_sec	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	icmp_ratelimit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	icmp_ratemask	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmp_link_local_mcast_reports	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmp_max_memberships	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmp_max_msf	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	igmp_qrv	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	inet_peer_maxttl	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	inet_peer_minttl	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	inet_peer_threshold	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ip_default_ttl	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ip_dynaddr	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ip_early_demux	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ip_forward	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ip_forward_use_pmtu	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ip_local_port_range	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ip_local_reserved_ports	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ip_no_pmtu_disc	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ip_nonlocal_bind	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ipfrag_high_thresh	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ipfrag_low_thresh	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ipfrag_max_dist	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ipfrag_secret_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ipfrag_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	ping_group_range	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_abort_on_overflow	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_adv_win_scale	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_allowed_congestion_control	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_app_win	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_autocorking	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_base_mss	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_challenge_ack_limit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_congestion_control	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_dsack	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_early_retrans	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_ecn	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_ecn_fallback	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_fack	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_fastopen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_fastopen_key	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_fin_timeout	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_frto	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_fwmark_accept	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_invalid_ratelimit	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_keepalive_intvl	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_keepalive_probes	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_keepalive_time	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_limit_output_bytes	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_low_latency	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_max_orphans	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_max_reordering	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_max_syn_backlog	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_max_tw_buckets	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_mem	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_min_rtt_wlen	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_min_snd_mss	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_min_tso_segs	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_moderate_rcvbuf	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_mtu_probing	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_no_metrics_save	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_notsent_lowat	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_orphan_retries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_pacing_ca_ratio	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_pacing_ss_ratio	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_probe_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_probe_threshold	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_recovery	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_reordering	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_retrans_collapse	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_retries1	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_retries2	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_rfc1337	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_rmem	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_sack	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_slow_start_after_idle	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_stdurg	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_syn_retries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_synack_retries	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_syncookies	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_thin_dupack	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_thin_linear_timeouts	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_timestamps	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_tso_win_divisor	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_tw_reuse	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_window_scaling	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_wmem	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	tcp_workaround_signed_windows	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	udp_mem	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	udp_rmem_min	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	udp_wmem_min	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	xfrm4_gc_thresh	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.netfilter.nf_log</p>
+                    <div class="wanTypeP">  
+                        <div class="normalInp">	<p>	0	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	1	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	10	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	11	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	12	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	2	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	3	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	4	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	5	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	6	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	7	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	8	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	9	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.netfilter</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	nf_conntrack_acct	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_buckets	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_checksum	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_events	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_expect_max	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_flush	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_generic_timeout	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_icmp_timeout	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_log_invalid	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_be_liberal	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_loose	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_max_retrans	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_no_window_check	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_timeout_close	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_timeout_close_wait	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_timeout_established	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_timeout_fin_wait	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_timeout_last_ack	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_timeout_max_retrans	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_timeout_syn_recv	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_timeout_syn_sent	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_timeout_time_wait	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_tcp_timeout_unacknowledged	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_udp_timeout	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	nf_conntrack_udp_timeout_stream	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">net.unix</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	max_dgram_qlen	</p><input type="text" class="secInp"/></div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">user</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	max_cgroup_namespaces	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	max_ipc_namespaces	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	max_mnt_namespaces	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	max_net_namespaces	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	max_pid_namespaces	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	max_user_namespaces	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	max_uts_namespaces	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">vm</p>
+                    <div class="wanTypeP"> 
+                        <div class="normalInp">	<p>	admin_reserve_kbytes	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	block_dump	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	compact_unevictable_allowed	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	dirty_background_bytes	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	dirty_background_ratio	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	dirty_bytes	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	dirty_expire_centisecs	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	dirty_ratio	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	dirty_writeback_centisecs	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	dirtytime_expire_seconds	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	extfrag_threshold	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	highmem_is_dirtyable	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	laptop_mode	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	legacy_va_layout	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	lowmem_reserve_ratio	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	max_map_count	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	min_free_kbytes	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mmap_min_addr	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	mmap_rnd_bits	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	oom_dump_tasks	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	oom_kill_allocating_task	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	overcommit_kbytes	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	overcommit_memory	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	overcommit_ratio	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	page-cluster	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	panic_on_oom	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	percpu_pagelist_fraction	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	stat_interval	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	stat_refresh	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	swappiness	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	user_reserve_kbytes	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	vfs_cache_pressure	</p><input type="text" class="secInp"/></div>
+                        <div class="normalInp">	<p>	watermark_scale_factor	</p><input type="text" class="secInp"/></div>    
+                    </div>
+                </div>
+                <!-- ----------按鈕區--------- -->
+                <div class="btnBox">
+                    <button class="button"><span>Save</span></button>
+                    <button class="button1"><span>Apply</span></button>
+                    <button class="button2"><span>Cancel Changes</span></button>
+                </div>
+            </article>
+            <!-- ---------右邊側欄----------- -->
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll"></div>
+            </aside>
+        </div>
+    </div>
+    <!-- ---------footer----------- -->
+    <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>

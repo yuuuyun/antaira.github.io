@@ -1,0 +1,421 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  letter-spacing: -0.02em;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  background-color: #f5f5f7;
+}
+body img {
+  max-width: 100%;
+}
+body .logo {
+  width: 150px;
+  margin-top: 15px;
+}
+body input[type=radio],
+body input[type=checkbox] {
+  border: 3px solid #FFFFFF;
+  accent-color: #231f1f;
+}
+
+aside {
+  width: 20%;
+  margin-left: 2%;
+}
+aside a {
+  color: #FFFFFF;
+}
+aside .sub-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #777674;
+  border-radius: 10px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+aside .asideAll {
+  margin: 25px 10px;
+}
+aside .asideAll h3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+aside .asideAll p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  width: 100%;
+  padding: 0 0 13px 0;
+  border-bottom: 0.5px solid #d2d2d7;
+}
+
+.btnBox {
+  position: relative;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: right;
+}
+
+.button {
+  background-color: #d92128;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  transition: all 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-1 {
+  background-color: #777674;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 10px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  transition: all 0.5s;
+}
+.button-1:hover span {
+  padding-right: 25px;
+}
+.button-1:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.button-1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button-1 span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1 {
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  transition: all 0.5s;
+}
+.button1:hover span {
+  padding-right: 25px;
+}
+.button1:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button1 span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2 {
+  background-color: #777674;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  transition: all 0.5s;
+}
+.button2:hover span {
+  padding-right: 25px;
+}
+.button2:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button2 span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3 {
+  background-color: #231f1f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  transition: all 0.5s;
+}
+.button3:hover span {
+  padding-right: 25px;
+}
+.button3:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button3 span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.PasteBtn {
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin-top: 4px;
+  background-color: #FFFFFF;
+  color: #231f1f;
+  border: 1.5px solid #777674;
+  background-color: #777674;
+  color: #FFFFFF;
+  height: 35px;
+}
+.PasteBtn:hover {
+  background-color: #231f1f;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.Copybutton {
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin-top: 4px;
+  background-color: #FFFFFF;
+  color: #231f1f;
+  border: 1.5px solid #777674;
+  height: 35px;
+}
+.Copybutton:hover {
+  background-color: #231f1f;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.RemoveBtn {
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin-top: 4px;
+  background-color: #FFFFFF;
+  color: #231f1f;
+  border: 1.5px solid #777674;
+  background-color: #d92128;
+  color: #FFFFFF;
+  border: 0;
+  height: 35px;
+}
+.RemoveBtn:hover {
+  background-color: #231f1f;
+  color: #FFFFFF;
+}
+
+.addbtn {
+  background-color: #777674;
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 110px;
+  height: 35px;
+}
+
+.dropDown_button {
+  justify-content: space-between;
+  display: flex;
+}
+.dropDown_button select {
+  position: relative;
+  width: calc(100% - 85px) !important;
+}
+
+.deleteBtn {
+  background-color: #d92128;
+  border: 0;
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+}
+
+.content5Btn {
+  background-color: #d92128;
+  border: 0;
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 19.5%;
+  height: 30px;
+}
+
+.generate-key {
+  background-color: #d92128;
+  border: 0;
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 120px;
+  height: 30px;
+}
+
+.smallBox {
+  margin-top: 5px;
+  text-align: right;
+}
+.smallBox .smallbutton {
+  background-color: #777674;
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 150px;
+  height: 35px;
+}
+
+.smallBox2 {
+  margin: 5px 0;
+}
+.smallBox2 .surveybutton {
+  background-color: #777674;
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 220px;
+  height: 35px;
+}
+
+.addVirtualAp-btn {
+  background-color: #a1a1a1;
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 150px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+@media (max-width: 458px) {
+  .button, .button1, .button2 {
+    width: 80px !important;
+  }
+}/*# sourceMappingURL=botton_aside.css.map */

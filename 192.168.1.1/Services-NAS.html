@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="stylesheet" href="./scss/style2.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <title>NAS</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <h1 class="wanTypeTitle">FTP Access</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">ProFTPD Server</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Server</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="01" checked>Enable</label>
+                                <label><input type="radio" name="01">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">Samba Server</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Samba Configuration</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Server</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="02" checked>Enable</label>
+                                <label><input type="radio" name="02">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">File Sharing</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">DHCP Server Setup</p>
+                    <div class="wanTypeP">
+                        <h1 class="middleTitle">Shares</h1>
+                        <div class="smlleTitle6">
+                            <li>Path</li>
+                            <li>Subdir</li>
+                            <li>Name</li>
+                            <li>Public</li>
+                            <li>Access</li>
+                            <li>Action</li>
+                        </div>
+                        <div class="btnBox">
+                            <button class="addbtn" ><span>Add Share</span></button>
+                        </div>  
+                        <h1 class="middleTitle">Users</h1>
+                        <div class="smlleTitle6">
+                            <li>User Name</li>
+                            <li>Password</li>
+                            <li>Access Shares</li>
+                            <li>Samba</li>
+                            <li>FTP</li>
+                            <li>Action</li>
+                        </div>
+                        <div class="btnBox">
+                            <button class="addbtn" ><span>Add Share</span></button>
+                        </div>  
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">DLNA Server</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">MiniDLNA</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Server</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="03" checked>Enable</label>
+                                <label><input type="radio" name="03">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Torrent</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Transmission</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="04" checked>Enable</label>
+                                <label><input type="radio" name="04">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------按鈕區--------- -->
+                <div class="btnBox">
+                    <button class="button"><span>Save</span></button>
+                    <button class="button1"><span>Apply</span></button>
+                    <button class="button2">Cancel Changes</button>
+                </div>
+            </article>
+             <!-- ---------右邊側欄----------- -->
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll">
+                    <h3>File Sharing:</h3>
+                    <p>In order to share resources add new shares by supplying a path and share name. <br> Define users that can access the share through FTP or Samba.</p>
+                    <h3>MiniDLNA Warning:</h3>
+                    <p> Unless you mount a partition to /jffs the index DB will be stored in RAM. <br> This can fill up your RAM and will initiate a DB reindex at every boot.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- ---------footer----------- -->
+    <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>

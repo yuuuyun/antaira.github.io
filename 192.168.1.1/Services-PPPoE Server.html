@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="stylesheet" href="./scss/style2.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <title>PPPoE Server</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <h1 class="wanTypeTitle">RP-PPPoE Server</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">RP-PPPoE Server</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Server</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="01" checked>Enable</label>
+                                <label><input type="radio" name="01">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">RP-PPPoE Server Options</p>
+                    <div class="wanTypeP">
+                        <div class="Connection-Type spacing">
+                            <p>Server Interface</p>
+                          <select>
+                            <option>LAN</option>
+                            <option>br1</option>
+                        </select>
+                        </div>  
+                        <div class="spacing">
+                            <p>IP Range</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Max Associated Clients</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Deflate Compression</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label  class="mid">BSD Compression</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label  class="mid">LZS Stac Compression</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label  class="mid">MPPC Compression</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label  class="mid">MPPE Encryption</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <p>Session Limit per MAC</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>LCP Echo Interval</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>LCP Echo Failure</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Client Idle Time</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>MTU</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>MRU</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Authentication</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="05" checked>RADIUS</label>
+                                <label><input type="radio" name="05">Local User Management (CHAP-Secrets)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">DHCP Server Setup</p>
+                    <div class="wanTypeP">
+                        <div class="smlleTitle">
+                            <li>User</li>
+                            <li>Password</li>
+                            <li>IP Address</li>
+                            <li>Enable</li>
+                        </div>
+                        <div class="btnBox">
+                            <button class="addbtn"><span>Add</span></button>
+                            <button class="RemoveBtn" ><span>Remove</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------按鈕區--------- -->
+                <div class="btnBox">
+                    <button class="button"><span>Save</span></button>
+                    <button class="button1"><span>Apply</span></button>
+                    <button class="button2"> Cancel</button>
+                </div>
+            </article>
+             <!-- ---------右邊側欄----------- -->
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll">
+                    <h3>Max Associated Clients:</h3>
+                    <p>You must set the correct amount of associated clients according to your IP range</p>
+                    <h3>Local User Management (CHAP-Secrets):</h3>
+                    <p>IP: 0.0.0.0 ⇨ You will serve IP addresses from the pool</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- ---------footer----------- -->
+    <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,762 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+* {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  letter-spacing: -0.02em;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  background-color: #f5f5f7;
+}
+body img {
+  max-width: 100%;
+}
+body .logo {
+  width: 150px;
+  margin-top: 15px;
+}
+body input[type=radio],
+body input[type=checkbox] {
+  border: 3px solid #FFFFFF;
+  accent-color: #231f1f;
+}
+
+aside {
+  width: 20%;
+  margin-left: 2%;
+}
+aside a {
+  color: #FFFFFF;
+}
+aside .sub-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #777674;
+  border-radius: 10px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+aside .asideAll {
+  margin: 25px 10px;
+}
+aside .asideAll h3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+aside .asideAll p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  width: 100%;
+  padding: 0 0 13px 0;
+  border-bottom: 0.5px solid #d2d2d7;
+}
+
+.btnBox {
+  position: relative;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: right;
+}
+
+.button {
+  background-color: #d92128;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  transition: all 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-1 {
+  background-color: #777674;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 10px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  transition: all 0.5s;
+}
+.button-1:hover span {
+  padding-right: 25px;
+}
+.button-1:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.button-1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button-1 span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1 {
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  transition: all 0.5s;
+}
+.button1:hover span {
+  padding-right: 25px;
+}
+.button1:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button1 span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2 {
+  background-color: #777674;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  transition: all 0.5s;
+}
+.button2:hover span {
+  padding-right: 25px;
+}
+.button2:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button2 span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3 {
+  background-color: #231f1f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  transition: all 0.5s;
+}
+.button3:hover span {
+  padding-right: 25px;
+}
+.button3:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button3 span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.PasteBtn {
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin-top: 4px;
+  background-color: #FFFFFF;
+  color: #231f1f;
+  border: 1.5px solid #777674;
+  background-color: #777674;
+  color: #FFFFFF;
+  height: 35px;
+}
+.PasteBtn:hover {
+  background-color: #231f1f;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.Copybutton {
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin-top: 4px;
+  background-color: #FFFFFF;
+  color: #231f1f;
+  border: 1.5px solid #777674;
+  height: 35px;
+}
+.Copybutton:hover {
+  background-color: #231f1f;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.RemoveBtn {
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px 0 5px 5px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin-top: 4px;
+  background-color: #FFFFFF;
+  color: #231f1f;
+  border: 1.5px solid #777674;
+  background-color: #d92128;
+  color: #FFFFFF;
+  border: 0;
+  height: 35px;
+}
+.RemoveBtn:hover {
+  background-color: #231f1f;
+  color: #FFFFFF;
+}
+
+.addbtn {
+  background-color: #777674;
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 110px;
+  height: 35px;
+}
+
+.dropDown_button {
+  justify-content: space-between;
+  display: flex;
+}
+.dropDown_button select {
+  position: relative;
+  width: calc(100% - 85px) !important;
+}
+
+.deleteBtn {
+  background-color: #d92128;
+  border: 0;
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+}
+
+.content5Btn {
+  background-color: #d92128;
+  border: 0;
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 19.5%;
+  height: 30px;
+}
+
+.generate-key {
+  background-color: #d92128;
+  border: 0;
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 120px;
+  height: 30px;
+}
+
+.smallBox {
+  margin-top: 5px;
+  text-align: right;
+}
+.smallBox .smallbutton {
+  background-color: #777674;
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 150px;
+  height: 35px;
+}
+
+.smallBox2 {
+  margin: 5px 0;
+}
+.smallBox2 .surveybutton {
+  background-color: #777674;
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 220px;
+  height: 35px;
+}
+
+.addVirtualAp-btn {
+  background-color: #a1a1a1;
+  border: 0;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 150px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+@media (max-width: 458px) {
+  .button, .button1, .button2 {
+    width: 80px !important;
+  }
+}
+.wrapper {
+  min-height: 100%;
+}
+
+.content {
+  padding-bottom: 40px;
+  /*隨footer高度需做調整*/
+}
+
+.footer {
+  height: 25px; /*設定footer本身高度*/
+  margin-top: -25px; /*隨footer高度需做調整*/
+  background-color: #231f1f;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 25px;
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+.content article {
+  width: 60%;
+}
+.content article .wanTypeTitle {
+  margin: 10px 0 0 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #777674;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+.content article .wanType {
+  margin-top: 25px;
+  border: 1px solid #777674;
+  border-radius: 8px;
+}
+.content article .wanType p {
+  margin: 8px 0 0 0;
+}
+.content article .wanType .wanTypeInfo {
+  margin-left: 20px;
+  position: absolute;
+  background-color: #FFFFFF;
+  margin-top: -15px;
+  color: #d92128;
+  font-weight: 500;
+  font-size: 16px;
+}
+.content article .wanType .middleTitle {
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.content article .wanType .middleTitle2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.content article .wanType .wanTypeP {
+  margin: 0 30px 0 30px;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.content article .wanType .wanTypeP .mtu1 select {
+  width: 20%;
+  height: 30px;
+}
+.content article .wanType .wanTypeP .mtu1 .secInp2 {
+  width: 78%;
+  height: 30px;
+}
+.content article .wanType .wanTypeP .mtu1 .secInp3 {
+  width: calc(100% - 120px);
+  height: 30px;
+  margin-right: 2%;
+}
+.content article .wanType .wanTypeP .mtu1 .secInp4 {
+  width: calc(100% - 120px);
+  height: 30px;
+}
+.content article .wanType .wanTypeP .settingCenter {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 1% 0;
+}
+.content article .wanType .wanTypeP .settingCenter select, .content article .wanType .wanTypeP .settingCenter input {
+  border: 1px solid #777674;
+  height: 30px;
+  width: 33%;
+}
+.content article .wanType .wanTypeP .settingCenter select:focus, .content article .wanType .wanTypeP .settingCenter input:focus {
+  border: 1.5px solid #d92128;
+}
+.content article .wanType .wanTypeP textarea {
+  width: 55.5%;
+  margin: 0 0 0 44.5%;
+  height: 100px;
+  border: 1px solid #777674;
+  border-radius: 4px;
+  outline: none;
+}
+.content article .wanType .wanTypeP textarea:focus {
+  border: 1.5px solid #d92128;
+}
+.content article .wanType .wanTypeP .textarea2 {
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #777674;
+  border-radius: 4px;
+  outline: none;
+}
+.content article .wanType .wanTypeP .textarea2:focus {
+  border: 1.5px solid #d92128;
+}
+.content article .wanType .wanTypeP .checkAndDrop {
+  justify-content: space-between;
+  display: flex;
+}
+.content article .wanType .wanTypeP .checkAndDrop select, .content article .wanType .wanTypeP .checkAndDrop .secInp3, .content article .wanType .wanTypeP .checkAndDrop .secInp4 {
+  width: 90%;
+  height: 30px;
+  position: relative;
+}
+.content article .wanType .wanTypeP .spacing, .content article .wanType .wanTypeP .normalInp {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.content article .wanType .wanTypeP .setting, .content article .wanType .wanTypeP .setting2 {
+  display: flex;
+}
+.content article .wanType .wanTypeP .setting .label, .content article .wanType .wanTypeP .setting2 .label {
+  width: 45%;
+}
+.content article .wanType .wanTypeP .setting p {
+  width: 55%;
+}
+.content article .wanType .wanTypeP .setting2 p {
+  width: 35%;
+}
+.content article .wanType .wanTypeP .mid {
+  line-height: 40px;
+  height: 40px;
+}
+.content article .wanType .wanTypeP select,
+.content article .wanType .wanTypeP input {
+  border: 1px solid #909090;
+  border-radius: 4px;
+  outline: none;
+}
+.content article .wanType .wanTypeP select:focus,
+.content article .wanType .wanTypeP input:focus {
+  border: 1.5px solid #d92128;
+}
+.content article .wanType .wanTypeP .box1,
+.content article .wanType .wanTypeP .radio1,
+.content article .wanType .wanTypeP .mtu1,
+.content article .wanType .wanTypeP .secInp,
+.content article .wanType .wanTypeP .Connection-Type select {
+  width: 55.5%;
+  align-self: center;
+  height: 30px;
+  line-height: 30px;
+}
+
+.file-All {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.file-All form {
+  width: 55.5%;
+}
+.file-All input {
+  width: 100%;
+}
+.file-All input[type=file]::file-selector-button {
+  height: 30px;
+  width: 25%;
+  color: #FFFFFF;
+  border: 0;
+  background-color: #777674;
+  border-radius: 3px 0 0 3px;
+}
+
+.message {
+  background-color: #FFFFFF;
+  width: calc(100% - 3em);
+  width: 100%;
+  padding: 1em 1em 1em 1.5em;
+  position: relative;
+  line-height: 1.5;
+  margin: 1% 0 0 0;
+  background-color: #ffedee;
+  border-left-width: 6px;
+  border-left-style: solid;
+  border-radius: 3px;
+}
+.message + .message {
+  margin-top: 2em;
+}
+.message:before {
+  color: #FFFFFF;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  top: 1em;
+  left: -3px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+.message p {
+  margin: 0 0 1em;
+}
+.message p:last-child {
+  margin-bottom: 0;
+}
+.message .progress {
+  background: #FFFFFF;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 20px;
+  width: 95%;
+}
+.message .progress .progress-value {
+  padding-left: 3%;
+  color: #FFFFFF;
+  animation: load 3s normal forwards;
+  border-radius: 100px;
+  background: #d92128;
+  line-height: 20px;
+}
+
+.message--error {
+  border-left-color: #d92128;
+}
+.message--error:before {
+  background-color: #d92128;
+  content: "‼";
+}
+
+.message2 {
+  width: 100%;
+  margin: 1% 0;
+  position: relative;
+  line-height: 1.5;
+}
+
+.progress2 {
+  background: rgb(237, 237, 237);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 20px;
+}
+.progress2 .progress-value {
+  padding-left: 1.5%;
+  color: #FFFFFF;
+  animation: load 3s normal forwards;
+  border-radius: 100px;
+  background: #a1a1a1;
+  line-height: 20px;
+}
+
+.message3 {
+  width: 20%;
+  margin: 10px 0;
+  position: relative;
+  line-height: 1.5;
+}
+
+.progress3 {
+  background: rgb(237, 237, 237);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 20px;
+}
+.progress3 .progress-value {
+  padding-left: 3%;
+  color: #FFFFFF;
+  animation: load 3s normal forwards;
+  border-radius: 100px;
+  background: #a1a1a1;
+  line-height: 20px;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@media (max-width: 995px) {
+  .content {
+    justify-content: center;
+  }
+  .content article {
+    width: 100%;
+    padding: 0 5% 0 5%;
+  }
+  .content aside {
+    display: none;
+  }
+  .spacing, .normalInp {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+  .mid {
+    line-height: 0px !important;
+    height: 0px !important;
+  }
+  .box1, .radio1, .mtu1, .secInp, .Connection-Type select {
+    width: 100% !important;
+  }
+  textarea {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}/*# sourceMappingURL=Setup.css.map */

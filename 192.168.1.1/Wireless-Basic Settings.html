@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <title>Wireless-Basic Settings</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Site Survey</p>
+                    <div class="wanTypeP">
+                        <div class="smallBox2">
+                            <button class="surveybutton" ><span>Wireless site survey (wlan0)</span></button>
+                            <button class="surveybutton" ><span>Wireless site survey (wlan1)</span></button>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">Wireless Interface wlan0 [2.4 GHz] - IPQ4019 802.11ac - Max Vaps(16)</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Physical Interface wlan0 - SSID [jqtek] HWAddr [C4:93:00:2F:3F:AB]</p>
+                    <div class="wanTypeP">
+                        <div class="Connection-Type spacing">
+                            <p>Radio Mode</p>
+                          <select name="#">
+                            <option value="#">AP</option>
+                            <option value="#">AP (WDS)</option>
+                            <option value="#">Station</option>
+                            <option value="#">Station Bridge (Routed)</option>
+                            <option value="#">Station (WDS)</option>
+                            <option value="#">Station (Mikrotik WDS)</option>
+                            <option value="#">Mesh / 802.11s</option>
+                            <option value="#">Ad-Hoc</option>
+                          </select>
+                        </div>
+                        <div class="Connection-Type spacing">
+                            <p>Network Mode</p>
+                          <select name="#">
+                            <option value="#">Disabled</option>
+                            <option value="#">Mixed</option>
+                            <option value="#">B Only</option>
+                            <option value="#">G Only</option>
+                            <option value="#">BG Mixed</option>
+                            <option value="#">N / G Mixed</option>
+                            <option value="#">N Only - 2.4 GHz</option>
+                          </select>
+                        </div>
+                        <div class="Connection-Type spacing">
+                            <p>Channel Width</p>
+                          <select name="#">
+                            <option value="#">Full (20 MHz)</option>
+                            <option value="#">Half (10 MHz)</option>
+                            <option value="#">Quarter (5 MHz)</option>
+                          </select>
+                        </div>
+                        <div class="spacing">
+                            <p>Service Set Identifier (SSID)</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Shortcut Forwarding Engine</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="01" checked>Enable</label>
+                                <label><input type="radio" name="01">Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Advanced Settings</label>
+                            <div class="box1 mid">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <p class="middleTitle">Physical Interface wlan0 - SSID [jqtek] HWAddr [C4:93:00:2F:3F:AB]</p>
+                        <div class="spacing">
+                            <label class="mid">Shortcut Forwarding Engine</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="02" checked>Enable</label>
+                                <label><input type="radio" name="02">Disabled</label>
+                            </div>
+                        </div>
+                        <div class="btnBox">
+                            <button class="Copybutton" ><span>Copy</span></button>
+                            <button class="PasteBtn" ><span>Paste</span></button>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">Virtual Interfaces</h1>
+                <button class="addVirtualAp-btn"><span>Add Virtual AP</span></button>
+                <h1 class="wanTypeTitle">Wireless Interface wlan1 [5 GHz/802.11ac] - IPQ4019 802.11ac - Max Vaps(16)</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Physical Interface wlan1 - SSID [roaming] HWAddr [C4:93:00:2F:3F:AC]</p>
+                    <div class="wanTypeP">
+                        <div class="Connection-Type spacing">
+                            <p>Radio Mode</p>
+                          <select name="#">
+                            <option value="#">AP</option>
+                            <option value="#">AP (WDS)</option>
+                            <option value="#">Station</option>
+                            <option value="#">Station Bridge (Routed)</option>
+                            <option value="#">Station (WDS)</option>
+                            <option value="#">Station (Mikrotik WDS)</option>
+                            <option value="#">Mesh / 802.11s</option>
+                            <option value="#">Ad-Hoc</option>
+                          </select>
+                        </div>
+                        <div class="Connection-Type spacing">
+                            <p>Network Mode</p>
+                          <select name="#">
+                            <option value="#">Disabled</option>
+                            <option value="#">Mixed</option>
+                            <option value="#">B Only</option>
+                            <option value="#">G Only</option>
+                            <option value="#">BG Mixed</option>
+                            <option value="#">N / G Mixed</option>
+                            <option value="#">N Only - 2.4 GHz</option>
+                          </select>
+                        </div>
+                        <div class="Connection-Type spacing">
+                            <p>Channel Width</p>
+                          <select name="#">
+                            <option value="#">Full (20 MHz)</option>
+                            <option value="#">Half (10 MHz)</option>
+                            <option value="#">Quarter (5 MHz)</option>
+                          </select>
+                        </div>
+                        <div class="Connection-Type spacing">
+                            <p>Channel</p>
+                          <select name="#">
+                            <option value="#">Auto</option>
+                            <option value="#">	36	 - 5180 MHz	</option>
+                            <option value="#">	40	 - 5200 MHz	</option>
+                            <option value="#">	44	 - 5220 MHz	</option>
+                            <option value="#">	48	 - 5240 MHz	</option>
+                            <option value="#">	52	 - 5260 MHz	</option>
+                            <option value="#">	56	 - 5280 MHz	</option>
+                            <option value="#">	60	 - 5300 MHz	</option>
+                            <option value="#">	64	 - 5320 MHz	</option>
+                            <option value="#">	100	 - 5500 MHz	</option>
+                            <option value="#">	104	 - 5520 MHz	</option>
+                            <option value="#">	108	 - 5540 MHz	</option>
+                            <option value="#">	112	 - 5560 MHz	</option>
+                            <option value="#">	116	 - 5580 MHz	</option>
+                            <option value="#">	120	 - 5600 MHz	</option>
+                            <option value="#">	124	 - 5620 MHz	</option>
+                            <option value="#">	128	 - 5640 MHz	</option>
+                            <option value="#">	132	 - 5660 MHz	</option>
+                            <option value="#">	136	 - 5680 MHz	</option>
+                            <option value="#">	140	 - 5700 MHz	</option>
+                            <option value="#">	144	 - 5720 MHz	</option>
+                            <option value="#">	149	 - 5745 MHz	</option>
+                            <option value="#">	153	 - 5765 MHz	</option>
+                            <option value="#">	157	 - 5785 MHz	</option>
+                            <option value="#">	161	 - 5805 MHz	</option>
+                            <option value="#">	165	 - 5825 MHz	</option>
+                            <option value="#">	169	 - 5845 MHz	</option>
+                            <option value="#">	173	 - 5865 MHz	</option>
+                            <option value="#">	177	 - 5885 MHz	</option>
+                          </select>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Allow Channel Overlapping</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="03" checked>Enable</label>
+                                <label><input type="radio" name="03">Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <p>Service Set Identifier (SSID)</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">SSID Broadcast</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="04" checked>Enable</label>
+                                <label><input type="radio" name="04">Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Advanced Settings</label>
+                            <div class="box1 mid">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <p class="middleTitle">Radio Time Restrictions</p>
+                        <div class="spacing">
+                            <label class="mid">Radio Scheduling</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="05" checked>Enable</label>
+                                <label><input type="radio" name="05">Disabled</label>
+                            </div>
+                        </div>
+                        <div class="btnBox">
+                            <button class="Copybutton" ><span>Copy</span></button>
+                            <button class="PasteBtn" ><span>Paste</span></button>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">Virtual Interfaces</h1>
+                <button class="addVirtualAp-btn"><span>Add Virtual AP</span></button>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Virtual Interfaces wlan1.1 SSID [roaming_vap] HWAddr [C6:93:00:2F:3F:AC]</p>
+                    <div class="wanTypeP">
+                        <div class="Connection-Type spacing">
+                            <p>Radio Mode</p>
+                          <select name="#">
+                            <option value="#">AP</option>
+                            <option value="#">AP (WDS)</option>
+                            <option value="#">Station</option>
+                            <option value="#">Station Bridge (Routed)</option>
+                            <option value="#">Station (WDS)</option>
+                            <option value="#">Station (Mikrotik WDS)</option>
+                            <option value="#">Mesh / 802.11s</option>
+                            <option value="#">Ad-Hoc</option>
+                          </select>
+                        </div>
+                        <div class="normalInp spacing">
+                            <p>Service Set Identifier (SSID)</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">SSID Broadcast</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="short" checked>Enable</label>
+                                <label><input type="radio" name="short">Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid mid">Advanced Settings</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="btnBox">
+                            <button class="RemoveBtn" ><span>Remove</span></button>
+                            <button class="Copybutton" ><span>Copy</span></button>
+                            <button class="PasteBtn" ><span>Paste</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------按鈕區--------- -->
+                <div class="btnBox">
+                    <button class="button" style="vertical-align:middle" ><span>Save</span></button>
+                    <button class="button1" style="vertical-align:middle"><span>Apply Settings</span></button>
+                    <button class="button2"> Cancel Changes</button>
+                </div>
+            </article>
+            <!-- ---------右邊側欄----------- -->
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll">
+                    <h3>AP mode</h3>
+                    <p>This is the default mode, also called Infrastructure mode</p>
+                    <h3>Client mode</h3>
+                    <p>The radio is used to connect wirelessly to another AP</p>
+                    <h3>Client bridged (Routed no NAT) mode</h3>
+                    <p>The radio is used to connect wirelessly to another AP</p>
+                    <h3>Ad-Hoc mode</h3>
+                    <p>This is for peer to peer wireless connections.</p>
+                    <h3>Wireless Channel</h3>
+                    <p>Select the appropriate channel top operate on.</p>
+                    <h3>SSID Broadcast</h3>
+                    <p>When wireless clients survey the local area for wireless networks to associate with, they will detect the SSID broadcast by the router.</p>
+                    <h3>Sensitivity Range (ACK Timing)</h3>
+                    <p>Adjusts the ACK timing based on the maximum distance in meters.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- ---------footer----------- -->
+    <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>

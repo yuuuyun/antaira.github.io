@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+@import 'botton_aside','footer';
+
+.content{
+    display: flex;
+    justify-content: center;
+
+    article {
+        width: 60%;
+
+        // --------灰底白字的大標題---------
+        .wanTypeTitle {
+            margin: 10px 0 0 0;
+            font-weight: $roboto-m5;
+            font-size: 16px;
+            color: $bg-wt;
+            background: $btn-gray;
+            border-radius: 5px;
+            padding: 8px 20px;
+        }
+    
+        .wanType {
+            margin-top: 25px;
+            border: 1px solid $btn-gray;
+            border-radius: 8px;
+    
+            p {
+                margin: 8px 0 0 0;
+            }
+
+            // --------紅字的中標題---------
+            .wanTypeInfo {
+                margin-left: 20px;
+                position: absolute;
+                background-color: $bg-wt;
+                margin-top: -15px;
+                color: $bg-red;
+                font-weight: $roboto-m5;
+                font-size: 16px;
+            }
+
+            // ---------黑色粗體內文標題----------
+            .middleTitle{
+                font-size: 16px;
+                margin-top: 20px;
+                font-weight: $roboto-m5;
+            }
+
+            // ---------黑色粗體內文標題(排列在最上面)----------
+            .middleTitle2{
+                font-size: 16px;
+                font-weight: $roboto-m5;
+            }
+
+            .wanTypeP {
+                margin: 0 30px 0 30px;
+                padding: 10px 0;
+                font-weight: $roboto-r4;
+                font-size: 16px;
+    
+                .mtu1 {
+                    select {
+                        width: 20%;
+                        height: 30px;
+                    }
+
+                    // -----下拉式選單在前，輸入框在後的輸入框樣式-----
+                    .secInp2 {
+                        width: 78%;
+                        height: 30px;
+                    }
+
+                    // -----輸入框在前，按鈕在後的輸入框樣式(像是Tunnels頁面)-----
+                    .secInp3 {
+                        width: calc(100% - 120px);
+                        height: 30px;
+                        margin-right: 2%;
+                    }
+
+                    // -----checkbox在前，輸入框在後的輸入框樣式(像是AdvancedRouting頁面)-----
+                    .secInp4 {
+                        width: calc(100% - 120px);
+                        height: 30px;
+                    }
+
+                }
+
+                //-------- 並排的下拉式選單和輸入框(wlan0-WDS頁面)-------
+                .settingCenter{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 0 1% 0;
+                    select , input{
+                        border: 1px solid $btn-gray;
+                        height: 30px;
+                        width: 33%;
+                        &:focus {border: 1.5px solid $bg-red;}
+                    }
+                }
+
+                textarea{
+                    width: 55.5%;
+                    margin: 0 0 0 44.5%;
+                    height: 100px;
+                    border: 1px solid $btn-gray;
+                    border-radius: 4px;
+                    outline:none;
+                    &:focus {border: 1.5px solid $bg-red;}
+                }
+
+                .textarea2{
+                    margin: 0;
+                    width: 100%;
+                    height: 100px;
+                    border: 1px solid $btn-gray;
+                    border-radius: 4px;
+                    outline:none;
+                    &:focus {border: 1.5px solid $bg-red;}
+                }
+
+                // -----checkbox在前，下拉式選單/輸入框 在後的下拉式選單樣式-----
+                .checkAndDrop{
+                    justify-content: space-between;
+                    display: flex;
+                    
+                    select ,.secInp3,.secInp4{
+                        width: 90%;
+                        height: 30px;
+                        position: relative;
+
+                    }
+                }
+    
+                .spacing,.normalInp{
+                    display: flex;
+                    justify-content: space-between;
+                    height: 40px;
+                }
+
+                .setting, .setting2 {
+                    display: flex;
+                    .label {
+                      width: 45%;
+                    }
+                  }
+
+                  .setting p {
+                    width: 55%;
+                  }
+                  
+                  .setting2 p {
+                    width: 35%;
+                  }
+                  
+    
+                .mid {
+                    line-height: 40px;
+                    height: 40px;
+                }
+    
+                select,
+                input {
+                    border: 1px solid #909090;
+                    border-radius: 4px;
+                    outline: none;
+    
+                    &:focus {
+                        border: 1.5px solid $bg-red;
+                    }
+                }
+    
+                .box1,
+                .radio1,
+                .mtu1,
+                .secInp,
+                .Connection-Type select {
+                    width: 55.5%;
+                    align-self: center;
+                    height: 30px;
+                    line-height: 30px;
+                }
+
+            }
+        }
+    }
+    
+}
+
+// -----------選擇檔案--------
+.file-All{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    form{
+        width: 55.5%;
+    }
+    input{
+        width: 100%;
+    }
+    input[type="file"]::file-selector-button {
+        height: 30px;
+        width: 25%;
+        color: $bg-wt;
+        border: 0;
+        background-color: $btn-gray;
+        border-radius: 3px 0 0 3px;
+    }
+}
+
+// ---------錯誤訊息------------
+
+.message {
+    background-color: $bg-wt;
+    width: calc(100% - 3em);
+    width: 100%;
+    padding: 1em 1em 1em 1.5em;
+    position: relative;
+    line-height: 1.5;
+    margin: 1% 0 0 0;
+    background-color: #ffedee;
+    border : {
+        left : {
+            width: 6px;
+            style: solid;
+        }
+        radius: 3px;
+    }
+    & + & {
+      margin-top: 2em;
+    }
+    &:before {
+      color: $bg-wt;
+      width:  1.5em;
+      height: 1.5em;
+      position: absolute;
+      top: 1em;
+      left: -3px;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+      line-height: 1.5;
+      text-align: center;
+    }
+    p {
+      margin: 0 0 1em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .progress {
+        background: $bg-wt;
+        justify-content: flex-start;
+        border-radius: 100px;
+        align-items: center;
+        position: relative;
+        display: flex;
+        height: 20px;
+        width: 95%;
+        .progress-value {
+            padding-left: 3%;
+            color: $bg-wt;
+            animation: load 3s normal forwards;
+            border-radius: 100px;
+            background: $bg-red;
+            line-height: 20px;
+        }
+    }
+  }
+
+.message--error {
+    border-left-color: $bg-red;
+    &:before {
+      background-color: $bg-red;
+      content: "‼";
+    }
+  }
+
+// ---------錯誤訊息(無文字訊息)------------
+.message2 {
+    width: 100%;
+    margin: 1% 0;
+    position: relative;
+    line-height: 1.5;
+  }
+
+.progress2 {
+    background: rgb(237, 237, 237);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 20px;
+    .progress-value {
+        padding-left: 1.5%;
+        color: $bg-wt;
+        animation: load 3s normal forwards;
+        border-radius: 100px;
+        background: $btn-gray2;
+        line-height: 20px;
+    }
+}
+
+// ---------錯誤訊息(無文字訊息 / 並列標題)------------
+.message3 {
+    width: 20%;
+    margin: 10px 0;
+    position: relative;
+    line-height: 1.5;
+}
+
+.progress3 {
+    background: rgb(237, 237, 237);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 20px;
+    .progress-value {
+        padding-left: 3%;
+        color: $bg-wt;
+        animation: load 3s normal forwards;
+        border-radius: 100px;
+        background: $btn-gray2;
+        line-height: 20px;
+    }
+}
+
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 50%; }
+  }
+
+// -------響應式部份---------
+
+@media (max-width:995px){
+    .content{
+        justify-content: center;
+        article{
+            width: 100%;
+            padding: 0 5% 0 5%;
+        }
+        aside{
+            display: none;
+        }
+       
+    }
+    .spacing,.normalInp  {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    .mid{
+        line-height: 0px !important;
+        height: 0px !important;
+    }
+    .box1, .radio1, .mtu1, .secInp, .Connection-Type select{
+        width:100% !important;
+    }
+    textarea{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}

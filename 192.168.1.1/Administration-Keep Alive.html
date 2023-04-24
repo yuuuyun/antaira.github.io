@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <title>Keep Alive</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <h1 class="wanTypeTitle">Keep Alive Management</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Proxy / Connection Watchdog</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Watchdog</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="01">Enable</label>
+                                <label><input type="radio" name="01" checked>Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Schedule Reboot</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Schedule</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="02">Enable</label>
+                                <label><input type="radio" name="02" checked>Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">WDS / Connection Watchdog</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Watchdog</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="03">Enable</label>
+                                <label><input type="radio" name="03" checked>Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------按鈕區--------- -->
+                <div class="btnBox">
+                    <button class="button"><span>Save</span></button>
+                    <button class="button1"><span>Apply</span></button>
+                    <button class="button2"><span>Cancel Changes</span></button>
+                </div>
+            </article>
+            <!-- ---------右邊側欄----------- -->
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll">
+                    <h3>Schedule Reboot At a Set Time:</h3>
+                    <p>Choose a schedule when to reboot the router. Cron must be enabled in the management tab.</p>
+                    <h3>WDS / Connection Watchdog:</h3>
+                    <p>IP Addresses: Only a maximum of three IP addresses separated by a SPACE are allowed.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- ---------footer----------- -->
+    <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>

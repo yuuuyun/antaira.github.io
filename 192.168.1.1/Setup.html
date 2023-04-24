@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <title>Setup</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <h1 class="wanTypeTitle">Wan Setup</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">WAN Connection Type</p>
+                    <div class="wanTypeP">
+                        <div class="Connection-Type spacing">
+                            <p>Connection Type</p>
+                            <select>
+                                <option>Static IP</option>
+                                <option>Automatic Configuration - DHCP</option>
+                                <option>PPPoE</option>
+                                <option>PPTP</option>
+                                <option>L2TP</option>
+                                <option>Mobile Broadband</option>
+                            </select>
+                        </div>  
+                    </div>
+                </div>
+    
+                <div class="wanType">
+                    <p class="wanTypeInfo">Optional Setting</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <p>Router Name</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <p>Host Name</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <p>Domain Name</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="MTU spacing">
+                            <p>MTU</p>
+                            <div class="mtu1">
+                                <select>
+                                    <option>AUTO</option>
+                                    <option>Manual</option>
+                                </select>
+                                <input type="text" class="secInp2" />
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Shortcut Forwarding Engine</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="01" checked>Enable</label>
+                                <label><input type="radio" name="01">Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">STP</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="02" checked>Enable</label>
+                                <label><input type="radio" name="02">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="wanTypeTitle">Network Setup</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Router IP</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <p>Local IP Address</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <p>Gateway</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <p>Local DNS</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Dynamic Host Configuration Protocol (DHCP)</p>
+                    <div class="wanTypeP">
+                        <div class="Connection-Type spacing">
+                            <p>DHCP Type</p>
+                            <select>
+                                <option>DHCP Server</option>
+                                <option>DHCP Forwarder</option>
+                            </select>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">DHCP Server</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="DH" checked>Enable</label>
+                                <label><input type="radio" name="DH">Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <p>Local Start IP Address</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <p>Maximum DHCP Users</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <p>Lease Expiration (min)</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <p>Static DNS 1</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <p>Static DNS 2</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <p>Static DNS 3</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <p>WINS</p>
+                            <input type="text" class="secInp" />
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Use dnsmasq for DNS</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">DHCP - Authoritative</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Recursive DNS Resolving (Unbound)</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Forced DNS Redirection</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Forced DNS Redirection DoT</label>
+                            <div class="box1">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wanType">
+                    <p class="wanTypeInfo">NTP Client Settings</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Client</label>
+                            <div class="radio1">
+                                <label>
+                                    <input type="radio" name="ec" checked>Enable
+                                </label>
+                                <label>
+                                    <input type="radio" name="ec">Disabled
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------按鈕區--------- -->
+                <div class="btnBox">
+                    <button class="button"><span>Save</span></button>
+                    <button class="button1"><span>Apply</span></button>
+                    <button class="button2"><span>Cancel</span></button>
+                </div>
+            </article>
+            <!-- ---------右邊側欄----------- -->
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll">
+                    <h3>Automatic Configuration - DHCP:</h3>
+                    <p>This setting is most commonly used by cable operators.</p>
+                    <h3>Hostname:</h3>
+                    <p>Enter the hostname provided by your ISP.</p>
+                    <h3>Domain Name:</h3>
+                    <p>Enter the domain name provided by your ISP.</p>
+                    <h3>Local IP Address:</h3>
+                    <p>This is the LAN-side IP address of the router.</p>
+                    <h3>Subnet Mask:</h3>
+                    <p>This is the subnet mask of the router.</p>
+                    <h3>DHCP Server:</h3>
+                    <p>Allows the router to manage your IP addresses.</p>
+                    <h3>Start IP Address:</h3>
+                    <p>The address you would like to start with.</p>
+                    <h3>Maximum DHCP Users:</h3>
+                    <p>You may limit the number of addresses your router hands out. 0 means only predefined static leases will be handed out.</p>
+                    <h3>NTP Client Settings:</h3>
+                    <p>Select your current time zone. When the Server IP / Name is left blank, an automated NTP server resolution address will be used.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- ---------footer----------- -->
+    <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>

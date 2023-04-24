@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <title> VPN</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <h1 class="wanTypeTitle">PPTP Server / Client</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">PPTP Server</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Server</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="01" checked>Enable</label>
+                                <label><input type="radio" name="01">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">PPTP Client</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Client</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="15" checked>Enable</label>
+                                <label><input type="radio" name="15">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">OpenVPN Server / Client</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">OpenVPN Server</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Server</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="03" checked>Enable</label>
+                                <label><input type="radio" name="03">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">OpenVPN Client</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Client</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="04" checked>Enable</label>
+                                <label><input type="radio" name="04">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">SoftEther VPN Server / Client</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">SoftEther VPN</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Server</label>
+                                <div class="radio1">
+                                        <label><input type="radio" name="05" checked>Enable</label>
+                                        <label><input type="radio" name="05">Disabled</label>
+                                </div>
+                        </div>
+                             <div class="spacing">
+                                <label  class="mid">Enable Bridge</label>
+                                <div class="radio1">
+                                    <label><input type="radio" name="06" checked>Enable</label>
+                                    <label><input type="radio" name="06">Disabled</label>
+                                </div>
+                            </div>
+                            <div class="spacing">
+                                <label  class="mid">Enable Client</label>
+                                <div class="radio1">
+                                    <label><input type="radio" name="07" checked>Enable</label>
+                                    <label><input type="radio" name="07">Disabled</label>
+                                </div>
+                            </div>
+                            <p>Configuration</p>
+                            <textarea></textarea>
+                    </div>
+                </div>
+                <!-- ----------按鈕區--------- -->
+                <div class="btnBox">
+                    <button class="button" ><span>Save</span></button>
+                    <button class="button1"><span>Apply</span></button>
+                    <button class="button2"><span>Cancel</span></button>
+                </div>
+            </article>
+            <!-- ---------右邊側欄----------- -->
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll">
+                    <h3>OpenVPN General:</h3>
+                    <p>Three auth methods are supported; pkcs12 (+dh on server), static and standard certs. Only enable MSS on one side of the link, fragment on both.</p>
+                    <h3>OpenVPN Server Additional Configuration:</h3>
+                    <p>To push routes to clients add 'push "route IP mask gateway"', to push DNS / WINS add 'push "dhcp-option DNS (or WINS) IP"' to the config. <br><br>
+                        Client connect directory: <br>When either USB or JFFS are mounted to /jffs, scripts will be called from /jffs/etc/openvpn/ccd/</p>
+                    <h3>OpenVPN Client Policy-based Routing:</h3>
+                    <p>Add IPs / NETs in the following format 0.0.0.0/0 to force clients to use the tunnel as the default gateway. Enter one IP / NET per line.</p>
+                    <h3>IP Address / Netmask:</h3>
+                    <p>Must be set when using DHCP-Proxy mode and local TAP is NOT bridged</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+      <!-- ---------footer----------- -->
+      <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>

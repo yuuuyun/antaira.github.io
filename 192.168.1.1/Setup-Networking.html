@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="stylesheet" href="./scss/style2.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <title>Networking</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <h1 class="wanTypeTitle">VLAN Tagging</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Tagging</p>
+                        <div class="wanTypeP">
+                            <div class="smlleTitle">
+                                <li>Interface</li>
+                                <li>Tag Number</li>
+                                <li>Prio</li>
+                                <li>Action</li>
+                            </div>
+                            <div class="smallBox">
+                                <button class="smallbutton"><span>Add</span></button>
+                            </div>
+                        </div>
+                </div>
+                <h1 class="wanTypeTitle">Bridging</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Create a Bridge</p>
+                        <div class="wanTypeP">
+                            <div class="smlleTitle9">
+                                <li>Name</li>
+                                <li>STP</li>
+                                <li class="long">IGMP Snooping</li>
+                                <li>Prio</li>
+                                <li class="long">Forward Delay</li>
+                                <li>Max Age</li>
+                                <li>MTU</li>
+                                <li>Root MAC</li>
+                                <li>Action</li>
+                            </div>
+                            <div class="smlleTitle9">
+                                <input type="text" class="content9"/>
+                                <select class="content9">
+                                    <option value="#">STP</option>
+                                    <option value="#">RSTP</option>
+                                    <option value="#">MSTP</option>
+                                    <option value="#" selected="selected">Off</option>
+                                </select>
+                                <select class="content9 long">
+                                    <option value="#">ON</option>
+                                    <option value="#" selected="selected">Off</option>
+                                </select>
+                                <select class="content9">
+                                    <option value="0">0</option>
+                                    <option value="4096">4096</option>
+                                    <option value="8192">8192</option>
+                                    <option value="12288">12288</option>
+                                    <option value="16384">16384</option>
+                                    <option value="20480">20480</option>
+                                    <option value="24576">24576</option>
+                                    <option value="28672">28672</option>
+                                    <option value="32768" selected="selected">32768</option>
+                                    <option value="36864">36864</option>
+                                    <option value="40960">40960</option>
+                                    <option value="45056">45056</option>
+                                    <option value="49152">49152</option>
+                                    <option value="53248">53248</option>
+                                    <option value="57344">57344</option>
+                                    <option value="61440">61440</option>
+                                </select>
+                                <input type="text" class="content9 long"/>
+                                <input type="text" class="content9"/>
+                                <input type="text" class="content9"/>
+                                <input type="text" class="content9"/>
+                                <button class="deleteBtn content9"><span>Delete</span></button>
+                            </div>
+                            <div class="smallBox">
+                                <button class="smallbutton"><span>Add</span></button>
+                            </div>
+                        </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Assign to Bridge</p>
+                        <div class="wanTypeP">
+                            <div class="smlleTitle7">
+                                <li>Assignment</li>
+                                <li>Interface</li>
+                                <li>STP</li>
+                                <li>Prio</li>
+                                <li>Path Cost</li>
+                                <li>Hairpin Mode</li>
+                                <li>Action</li>
+                            </div>
+                            <div class="smallBox">
+                                <button class="smallbutton" style="vertical-align:middle" ><span>Add</span></button>
+                            </div>
+                        </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Current Bridging Table</p>
+                    <div class="wanTypeP">
+                        <div class="smlleTitle3">
+                            <li>Bridge Name</li>
+                            <li>STP</li>
+                            <li>Interface</li>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">IP Virtual Server</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Configuration</p>
+                    <div class="wanTypeP">
+                        <div class="Connection-Type spacing">
+                            <p>Role</p>
+                            <select>
+                                <option selected="selected">Master</option>
+                                <option>Backup</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Create Virtual Server</p>
+                    <div class="wanTypeP">
+                        <div class="smlleTitle6">
+                            <li>Server Name</li>
+                            <li>Source IP</li>
+                            <li>Source Port</li>
+                            <li>Protocol</li>
+                            <li>Scheduler</li>
+                            <li>Action</li>
+                        </div>
+                        <div class="smallBox">
+                            <button class="smallbutton"><span>Add</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">DHCP Server Setup</p>
+                    <div class="wanTypeP">
+                        <div class="Connection-Type spacing">
+                            <p>Type</p>
+                            <select>
+                                <option value="balance-rr" selected="selected">balance-rr</option>
+                                <option value="active-backup">active-backup</option>
+                                <option value="balance-xor">balance-xor</option>
+                                <option value="broadcast">broadcast</option>
+                                <option value="802.3ad">802.3ad</option>
+                                <option value="balance-tlb">balance-tlb</option>
+                                <option value="balance-alb">balance-alb</option>
+                                <option value="weighted-rr">weighted-rr</option>
+                                <option value="duplex">duplex</option>
+                            </select>
+                        </div>  
+                        <div class="spacing">
+                            <p>Interfaces</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="smallBox">
+                            <button class="smallbutton"><span>Add</span></button>
+                        </div>  
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">Interface Setup</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Port Setup</p>
+                    <div class="wanTypeP">
+                        <div class="Connection-Type spacing">
+                            <p>WAN Port Assignment</p>
+                          <select>
+                            <option value="">Disabled</option>
+                            <option value="eth0">eth0</option>
+                            <option value="eth1" selected="selected">eth1</option>
+                            <option value="wlan1">wlan1</option>
+                            <option value="wlan1.1">wlan1.1</option>
+                            <option value="br0">br0</option>
+                            <option value="br1">br1</option>
+                        </select>
+                        </div>  
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Network Configuration eth0</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <p>MAC Address</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Label</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>TX Queue Length</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Multicast to Unicast</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="01">Enable</label>
+                                <label><input type="radio" name="01" checked>Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Bridge Assignment</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="02" checked>Default</label>
+                                <label><input type="radio" name="02">Unbridged</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Network Configuration eth1</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <p>MAC Address</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Label</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>TX Queue Length</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Multicast to Unicast</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="03">Enable</label>
+                                <label><input type="radio" name="03" checked>Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Bridge Assignment</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="04" checked>Default</label>
+                                <label><input type="radio" name="04">Unbridged</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Network Configuration wlan1</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <p>MAC Address</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Label</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>TX Queue Length</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Multicast to Unicast</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="05">Enable</label>
+                                <label><input type="radio" name="05" checked>Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Bridge Assignment</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="06" checked>Default</label>
+                                <label><input type="radio" name="06">Unbridged</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Network Configuration wlan1.1</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <p>MAC Address</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Label</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>TX Queue Length</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Multicast to Unicast</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="07">Enable</label>
+                                <label><input type="radio" name="07" checked>Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Bridge Assignment</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="08" checked>Default</label>
+                                <label><input type="radio" name="08">Unbridged</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Network Configuration br1</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <p>Label</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>TX Queue Length</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>MTU</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>IP Address</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Multicast Forwarding</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="09">Enable</label>
+                                <label><input type="radio" name="09" checked>Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Masquerade / NAT</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="10" checked>Enable</label>
+                                <label><input type="radio" name="10">Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Filter WAN NAT Redirection</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="11">Enable</label>
+                                <label><input type="radio" name="11" checked>Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Net Isolation</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="12">Enable</label>
+                                <label><input type="radio" name="12" checked>Disabled</label>
+                            </div>
+                        </div>
+                        <div class="spacing">
+                            <label class="mid">Forced DNS Redirection</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="13">Enable</label>
+                                <label><input type="radio" name="13" checked>Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">DHCPD</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Multiple DHCP Servers</p>
+                        <div class="wanTypeP">
+                            <div class="smlleTitle7">
+                                <li>IP Address</li>
+                                <li>Interface</li>
+                                <li>Enable</li>
+                                <li>Start</li>
+                                <li>Max</li>
+                                <li>Lease time</li>
+                                <li>Action</li>
+                            </div>
+                            <div class="smallBox">
+                                <button class="smallbutton"><span>Add</span></button>
+                            </div>
+                        </div>
+                </div>
+                <!-- ----------按鈕區--------- -->
+                <div class="btnBox">
+                    <button class="button"><span>Save</span></button>
+                    <button class="button1"><span>Apply</span></button>
+                    <button class="button2"><span>Cancel</span></button>
+                </div>
+            </article>
+            <!-- ---------右邊側欄----------- -->
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll">
+                    <h3>JFFS2 Support Requirements:</h3>
+                    <p>Before enabling storage for Client Lease DB into JFFS2 flash storage, JFFS2 support must be enabled. JFFS2 Support is located on the Administration / Management tab.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- ---------footer----------- -->
+    <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>

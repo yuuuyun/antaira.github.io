@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <title>Firmware Upgrade</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <h1 class="wanTypeTitle">Firmware and Reset Management</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Firmware Upgrade and Reset</p>
+                    <div class="wanTypeP">
+                        <div class="Connection-Type spacing">
+                            <p>After Flashing</p>
+                          <select>
+                            <option>Do not Reset</option>
+                            <option>Reset to Factory Defaults</option>
+                          </select>
+                        </div> 
+                        <div class="file-All">
+                            <p>Select a Firmware File</p>
+                            <form method="post" enctype="multipart/form-data">
+                                <input type="file" name="file" class="file" onchange="document.getElementById('textfield').value=this.value">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="message  message--error">
+                    <p>Upgrading the firmware may take a few minutes.
+                        Do not turn off the power or press the reset button!
+                    </p>
+                    <div class="progress">
+                        <div class="progress-value">50%</div>
+                    </div>
+                </div>
+                <div class="btnBox">
+                    <button class="button3"><span>Upgrade</span></button>
+                </div>
+            </article>
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll">
+                    <h3>Firmware Upgrade and Reset:</h3>
+                    <p>Click on the Browse... button to select the firmware file to be uploaded to the router. <br>
+                        Click the Upgrade button to begin the upgrade process.The upgrade must not be interrupted.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </div>
+        <!-- ---------footer----------- -->
+    <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>

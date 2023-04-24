@@ -1,0 +1,97 @@
+// ------客戶公司標準色-------
+$bg-red: #d92128;
+$bg-bl: #231f1f;
+$bg-wt: #FFFFFF;
+$btn-green: #4CAF50;
+$btn-gray: #777674;
+$btn-gray2:#a1a1a1;
+
+// --------同行有多個標題的標題樣式設定，像是Networking頁面-----------
+.smlleTitle ,.smlleTitle3,.smlleTitle5,.smlleTitle6, .smlleTitle7,.smlleTitle8,.smlleTitle9,.lanSmlleTitle9,.smlleTitle11{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 ;
+    li{
+        list-style: none;
+        background-color: $btn-gray2;
+        color: $bg-wt;
+        border-radius: 5px;
+        justify-content: center;
+        text-align: center;
+        padding: 2.5px;
+        font-size: 14px;
+    }
+}
+
+// --------同行有3個標題的標題寬度設定-----------
+.smlleTitle3 li{
+    width: 33%;
+}
+
+// --------同行有4個標題的標題寬度設定-----------
+.smlleTitle li{
+    width: 24.5%;
+}
+
+// --------同行有5個標題的標題寬度設定-----------
+.smlleTitle5 li{
+    width: 19.5%;
+}
+
+.content5{
+    height: 30px;
+    width:19.5%;
+}
+
+// --------同行有6個標題的標題寬度設定-----------
+.smlleTitle6 li{
+    width: 16.2%;
+}
+
+// --------同行有7個標題的標題寬度設定-----------
+.smlleTitle7 li{
+    width: 13.8%;
+}
+
+// --------同行有8個標題的標題寬度設定-----------
+.smlleTitle8 li{
+    width: 12%;
+}
+
+// --------同行有9個標題的標題寬度設定(networking)-----------
+.smlleTitle9 li{
+    width: 9.3%;
+}
+
+.long{
+    width: 15.3% !important;
+}
+
+.content9{
+    height: 30px;
+    width: 9.3%;
+}
+
+// --------同行有9個標題的標題寬度設定(lan)-----------
+.lanSmlleTitle9 li{
+    width: 10.6%;
+}
+
+.lanContent9{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    li{
+        width: 10.5%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+// --------同行有11個標題的標題寬度設定-----------
+.smlleTitle11 li{
+    width: 8.5%;
+}
+
+

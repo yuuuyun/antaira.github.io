@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="stylesheet" href="./scss/style2.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <title>FreeRADIUS</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <h1 class="wanTypeTitle">FreeRADIUS</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">FreeRADIUS Server</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <label class="mid">Enable Server</label>
+                            <div class="radio1">
+                                <label><input type="radio" name="01" checked>Enable</label>
+                                <label><input type="radio" name="01">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Basic Settings</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <p>Port</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Server Certificate</p>
+                    <div class="wanTypeP">
+                        <div class="spacing">
+                            <p>Country Code</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>State or Province</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Locality</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Organisation / Company</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Email Address</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Common Certificate Name</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Expires (Days)</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="spacing">
+                            <p>Passphrase</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="smallBox">
+                            <button class="smallbutton"><span>Generate Certificate</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Certificate Status</p>
+                    <div class="wanTypeP">
+                        <p>Generating 0%, this may take a while to complete...</p>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Clients</p>
+                    <div class="wanTypeP">
+                        <div class="smlleTitle3">
+                            <li>IP / NET</li>
+                            <li>Shared Key</li>
+                            <li>Action</li>
+                        </div>
+                        <div class="smallBox">
+                            <button class="smallbutton" ><span>Add</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Users</p>
+                    <div class="wanTypeP">
+                        <div class="smlleTitle8">
+                            <li>Username</li>
+                            <li>Password</li>
+                            <li>Down Speed</li>
+                            <li>Up Speed</li>
+                            <li>Expires(Days)</li>
+                            <li>Certificate</li>
+                            <li>Enabled</li>
+                            <li>Action</li>
+                        </div>
+                        <div class="smallBox">
+                            <button class="smallbutton" ><span>Add</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------按鈕區--------- -->
+                <div class="btnBox">
+                    <button class="button"><span>Save</span></button>
+                    <button class="button1"><span>Apply</span></button>
+                    <button class="button2"> Cancel</button>
+                    <button class="button3"><span>Refresh</span></button>
+                </div>
+            </article>
+            <!-- ---------右邊側欄----------- -->
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll">
+                    <h3>FreeRADIUS Server Requirements:</h3>
+                    <p>Before starting the FreeRADIUS Server, JFFS2 support must be enabled. <br> JFFS2 Support is located on the Administration / Management tab.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- ---------footer----------- -->
+    <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>

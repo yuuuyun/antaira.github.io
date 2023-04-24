@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/Setup.css">
+    <link rel="icon" type="image/png" href="img/aa.ico">
+    <link rel="stylesheet" href="./scss/style2.css">
+    <title>WOL</title>
+</head>
+<body>
+    <script type="text/javascript" src="navbar.js"></script>
+    <div class="wrapper">
+        <div class="content">
+            <article>
+                <h1 class="wanTypeTitle">Wake-on-LAN (WOL)</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">DHCP Server Setup</p>
+                    <div class="wanTypeP">
+                        <div class="smlleTitle5">
+                            <li>MAC Address</li>
+                            <li>Hostname</li>
+                            <li>IP Address</li>
+                            <li>Lease Expiration</li>
+                            <li>Action</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">WOL Addresses</p>
+                    <div class="wanTypeP">
+                        <div class="smlleTitle5">
+                            <li>MAC Address</li>
+                            <li>Hostname</li>
+                            <li>Net Broadcast</li>
+                            <li>Remove</li>
+                            <li>Action</li>
+                        </div>
+                        <div class="smlleTitle5">
+                            <input type="text" class="content5"/>
+                            <input type="text" class="content5"/>
+                            <input type="text" class="content5"/>
+                            <input type="text" class="content5"/>
+                            <button class="content5Btn content5"><span>Add Host</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wanType">
+                    <p class="wanTypeInfo">Manual WOL</p>
+                    <div class="wanTypeP">
+                        <div class="normalInp">
+                            <p>MAC Address(es)</p>
+                        </div>
+                        <textarea></textarea>
+                        <div class="normalInp">
+                            <p>IP Address</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="normalInp">
+                            <p>UDP Port</p>
+                            <input type="text" class="secInp"/>
+                        </div>
+                        <div class="smallBox">
+                            <button class="smallbutton"><span>Manual Wake Up</span></button>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="wanTypeTitle">Automatic Wake-on-LAN</h1>
+                <div class="wanType">
+                    <p class="wanTypeInfo">WOL Daemon</p>
+                    <div class="wanTypeP">
+                        <div class="enableClient">
+                            <label>Enable Daemon</label>
+                            <div class="Shortcut1">
+                                <label><input type="radio" name="01" checked>Enable</label>
+                                <label><input type="radio" name="01">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnBox">
+                    <button class="button"><span>Save</span></button>
+                    <button class="button1"><span>Apply</span></button>
+                    <button class="button2"><span>Cancel</span></button>
+                </div>
+            </article>
+            <aside>
+                <h2 class="sub-title">Help<a href="#">more...</a></h2>
+                <div class="asideAll">
+                    <h3>Wake-on-LAN (WOL):</h3>
+                    <p>This page allows you to Wake Up hosts on your local network. <br> You can manually wake up hosts by clicking the Wake Up button or alternatively by programing an automatic wake up schedule provided by the WOL Daemon.</p>
+                    <h3>MAC Address(es):</h3>
+                    <p>MAC address(es) are entered in the format e.g. 01:23:45:67:89:AB and must be separated by a SPACE.</p>
+                    <h3>IP Address:</h3>
+                    <p>The IP address is typically the broadcast address for the local network, it could also be a remote address when e.g. the target host is not a LAN client.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+     <!-- ---------footer----------- -->
+     <footer class="footer">
+        <p>2022 Antaira. LTD. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+</html>
